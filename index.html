@@ -9,67 +9,74 @@
 <div>
   <div class="ui inverted vertical masthead center aligned segment hero">
     {% include menu.html %}
-    <div class="ui two column stackable grid container">
-      <div class="ui column">
-        {% include headline.html %}
-        <div class="ui center aligned basic segment">
-          <p class="ui white text">Ever stared at the tap list for a brewpub or restaurant and had no idea what to order?</p>
-          <p class="ui white text">Get the Beer Goggles app, take a photo of the menu, and get recommendations within seconds!</p>
-          <div class="ui row">
-            <h4 class="ui inverted sub header">Available on the
-              <a class="link" href="https://itunes.apple.com/us/app/beersight/id1197989907">App Store</a>
-              and
-              <a class="link" href="https://play.google.com/store/apps/details?id=com.beersight">Google Play</a>
-            </h4>
-          {% include ctabuttons.html %}
-        </div>
-      </div>
-      <div class="ui column">
+    <div class="ui center aligned basic segment">
+      {% include headline.html %}
+      <div class="ui row">
+        <h4 class="ui inverted sub header">Download now</h4>
+        {% include ctabuttons.html %}
       </div>
     </div>
-  </div>
 </div>
+<!-- feature 1 -->
 <div class="ui basic center aligned padded segment">
-  <div class="ui relaxed divided grid container">
-    <a name="more"></a>
-    <div class="ui three stackable raised cards">
-      <div class="card">
-        <div class="image">
-          <img src="images/tap-list.jpg">
+  <div class="ui two column stackable relaxed grid container">
+    <div class="column">
+      <img class="ui bordered huge rounded image" src="images/cheers_hero.jpg" />
+    </div>
+    <div class="left aligned column">
+      <h1>Beer's awesome!</h1>
+      <div class="ui huge relaxed vertical list">
+        <div class="item">
+          <i class="yellow big bar icon"></i>
+          <div class="middle aligned content">New brewpubs open up every month, and breweries release new styles often</div>
         </div>
-        <div class="content">
-          <div class="header">
-            Staring at a list like this?
-          </div>
-          <div class="description">Knowing the style, alcohol content, and origin doesn't really help you decide what to order. If you even get that!</div>
+        <div class="item">
+          <i class="red big question icon"></i>
+          <div class="middle aligned content">But how do you know what to order?</div>
         </div>
-      </div>
-      <div class="card">
-        <div class="image">
-          <img src="images/phone-camera.jpg">
+        <div class="item">
+          <i class="blue big thumbs outline down icon"></i>
+          <div class="middle aligned content">A punny name doesn't always mean a good beer</div>
         </div>
-        <div class="content">
-          <div class="header">
-            Snap a picture of the menu
-          </div>
-          <div class="description">In seconds, Beer Goggles will recognize the beers on the tap list.</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="image">
-          <img src="images/list-results.jpg">
-        </div>
-        <div class="content">
-          <div class="header">
-            And turn them in to a searchable list
-          </div>
-          <div class="description">Including description, ABV, IBU and more!</br>
+        <div class="item">
+          <i class="green big dollar icon"></i>
+          <div class="middle aligned content">And craft beer is expensive! Ordering something you won't like is a waste</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-{% include footer.html %} 
+<!-- Try Beer Goggles -->
+<div class="ui basic center aligned padded segment">
+  <h1>Try Beer Goggles!</h1>
+</div>
+<!-- features -->
+<div class="ui basic center aligned padded segment">
+  <div class="ui three column doubling stackable grid container">
+    <div class="column">
+      <img class="ui centered medium rounded image" src="images/photo.gif" />
+      <h4>
+        <i class="grey big photo icon"></i>
+        Take a photo of the tap list
+      </h4>
+    </div>
+    <div class="column">
+      <img class="ui centered medium rounded image" src="images/scan.gif" />
+      <h4>
+        <i class="orange big wizard icon"></i>
+        In seconds, Beer Goggles will identify the beers
+      </h4>
+    </div>
+    <div class="column">
+      <img class="ui centered medium rounded image" src="images/resultlist.gif" />
+      <h4>
+        <i class="black big file text up icon"></i>
+        And give you description, reviews, suggestions, and more!
+      </h4>
+    </div>
+  </div>
+</div>
+{% include footer.html %}
 </body>
 
 </html>

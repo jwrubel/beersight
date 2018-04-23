@@ -9,11 +9,22 @@
 <div>
   <div class="ui inverted vertical masthead center aligned segment hero">
     {% include menu.html %}
-    <div class="ui center aligned basic segment">
-      {% include headline.html %}
-      <div class="ui row">
-        <h4 class="ui inverted sub header">Download now</h4>
-        {% include ctabuttons.html %}
+    <div class="ui container">
+      <div class="ui basic segment">
+        {% include headline.html %}
+      </div>
+    </div>
+    <div class="ui two column stackable middle aligned grid container">
+      <div class="ui center aligned column">
+        <div class="ui center aligned basic segment">
+          <img class="ui centered image" src="images/beergoggles-logo.png" />
+        </div>
+      </div>
+      <div class="ui center aligned column">
+        <div class="ui center aligned basic segment">
+          <h4 class="ui inverted sub header">Download now</h4>
+          {% include ctabuttons.html %}
+        </div>
       </div>
     </div>
 </div>
@@ -21,7 +32,7 @@
 <div class="ui basic center aligned padded segment">
   <div class="ui two column stackable relaxed grid container">
     <div class="column">
-      <img class="ui bordered huge rounded image" src="images/cheers_hero.jpg" />
+      <img class="ui bordered huge rounded image" src="images/hero-pints.jpg" />
     </div>
     <div class="left aligned column">
       <h1>Beer's awesome!</h1>
@@ -54,21 +65,21 @@
 <div class="ui basic center aligned padded segment">
   <div class="ui three column doubling stackable grid container">
     <div class="column">
-      <img class="ui centered medium rounded image" src="images/photo.gif" />
+      <img class="ui centered medium rounded image" style="height: 400px; width: auto;" src="images/photo.gif" />
       <h4>
         <i class="grey big photo icon"></i>
         Take a photo of the tap list
       </h4>
     </div>
     <div class="column">
-      <img class="ui centered medium rounded image" src="images/scan.gif" />
+      <img class="ui centered medium rounded image" style="height: 400px; width: auto;" src="images/scan.gif" />
       <h4>
         <i class="orange big wizard icon"></i>
         In seconds, Beer Goggles will identify the beers
       </h4>
     </div>
     <div class="column">
-      <img class="ui centered medium rounded image" src="images/resultlist.gif" />
+      <img class="ui centered medium rounded image" style="height: 400px; width: auto;" src="images/resultlist.gif" />
       <h4>
         <i class="black big file text up icon"></i>
         And give you description, reviews, suggestions, and more!
